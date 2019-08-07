@@ -1,0 +1,32 @@
+postgres://sanket5:sanket123@192.168.1.122:5432/fabricexplorer
+error when connecting to db: { Error: connect ECONNREFUSED 192.168.1.122:5432
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '192.168.1.122',
+  port: 5432 }
+
+Sync process is started for the network : [balance-transfer] and client : [balance-transfer]
+<<<<<<<<<<<<<<<<<<<<<<<<<< Synchronizer Error >>>>>>>>>>>>>>>>>>>>>
+TypeError: Cannot read property '_channels' of null
+    at FabricClient.getChannels (/home/sanket/Explorer_Setup/blockchain-explorer/app/platform/fabric/FabricClient.js:709:26)
+    at SyncServices.synchNetworkConfigToDB (/home/sanket/Explorer_Setup/blockchain-explorer/app/platform/fabric/sync/SyncService.js:66:27)
+    at SyncPlatform.initialize (/home/sanket/Explorer_Setup/blockchain-explorer/app/platform/fabric/sync/SyncPlatform.js:115:38)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing client processor >>>>>>>>>>>>>>>>>>>>>
+(node:26522) DeprecationWarning: grpc.load: Use the @grpc/proto-loader module with grpc.loadPackageDefinition instead
+error when connecting to db: TypeError: Cannot read property 'on' of undefined
+    at Timeout.handleDisconnect [as _onTimeout] (/home/sanket/Explorer_Setup/blockchain-explorer/app/persistence/postgreSQL/PgService.js:68:16)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+<<<<<<<<<<<<<<<<<<<<<<<<<< Synchronizer Error >>>>>>>>>>>>>>>>>>>>>
+TypeError: "callback" argument must be a function
+    at setTimeout (timers.js:450:11)
+    at Timeout.handleDisconnect [as _onTimeout] (/home/sanket/Explorer_Setup/blockchain-explorer/app/persistence/postgreSQL/PgService.js:85:5)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing client processor >>>>>>>>>>>>>>>>>>>>>

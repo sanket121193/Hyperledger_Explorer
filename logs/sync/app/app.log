@@ -1,0 +1,22 @@
+[2019-08-02 16:45:39.608] [DEBUG] Sync - Start synchronizer
+[2019-08-02 16:45:39.629] [DEBUG] Synchronizer -  Synchronizer initialized
+[2019-08-02 16:45:40.622] [DEBUG] SyncPlatform - ******* Initialization started for child client process null ******
+[2019-08-02 16:45:40.622] [DEBUG] SyncPlatform - Blocks synch interval time >> 60000
+[2019-08-02 16:45:40.623] [DEBUG] FabricUtils - ************ Initializing fabric client for [balance-transfer]************
+[2019-08-02 16:45:40.623] [DEBUG] FabricClient - Client configuration [balance-transfer]  ...  this.client_config  { name: 'balance-transfer',
+  profile: './connection-profile/balance-transfer.json',
+  enableAuthentication: false }
+[2019-08-02 16:45:40.624] [ERROR] FabricClient - SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at FabricConfig.initialize (/home/sanket/Explorer_Setup/blockchain-explorer/app/platform/fabric/FabricConfig.js:31:22)
+    at FabricGateway.initialize (/home/sanket/Explorer_Setup/blockchain-explorer/app/platform/fabric/gateway/FabricGateway.js:48:21)
+    at FabricClient.initialize (/home/sanket/Explorer_Setup/blockchain-explorer/app/platform/fabric/FabricClient.js:80:29)
+    at Object.createFabricClient (/home/sanket/Explorer_Setup/blockchain-explorer/app/platform/fabric/utils/FabricUtils.js:27:16)
+    at SyncPlatform.initialize (/home/sanket/Explorer_Setup/blockchain-explorer/app/platform/fabric/sync/SyncPlatform.js:106:35)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+[2019-08-02 16:45:40.624] [DEBUG] FabricClient - this.defaultPeer  {}
+[2019-08-02 16:45:40.624] [ERROR] FabricClient - TypeError: Cannot read property 'queryChannels' of null
+    at FabricClient.initialize (/home/sanket/Explorer_Setup/blockchain-explorer/app/platform/fabric/FabricClient.js:121:37)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
